@@ -33,8 +33,6 @@ Ce projet automatise la détection de serveurs Discord déployant des fonctionna
 
 > **⚠️ ATTENTION** : L'utilisation du script peut entraîner des requêtes massives vers l'API Discord et violer ses Conditions d’Utilisation, ce qui risque de bannir ou suspendre votre compte. Utilisez-le avec précaution.
 
-## Prérequis
-
 * **Plugin** : [Vencord ConsoleShortcuts](https://vencord.com/) installé et activé.
 * **Compte Discord** : connecté, avec la capacité de créer des serveurs (quota non atteint).
 
