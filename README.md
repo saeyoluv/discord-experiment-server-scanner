@@ -1,6 +1,9 @@
 # discord-experiment-server-scanner
 
+<p style="color:red"><strong>⚠️ ATTENTION :</strong> L’utilisation de ce script peut violer les Conditions d’Utilisation de Discord et entraîner la suspension ou le bannissement de votre compte. Exécutez-le à vos risques et périls.</p>
+
 **Scanner de serveurs expérimentaux Discord**
+
 Ce projet automatise la détection de serveurs Discord déployant des fonctionnalités en test (feature flags). Il crée et supprime des serveurs à partir d’un template, analyse leurs identifiants selon un algorithme de hachage, et signale ceux qui correspondent à vos plages d’expérience.
 
 ---
@@ -16,7 +19,6 @@ Ce projet automatise la détection de serveurs Discord déployant des fonctionna
 7. [Gestion des erreurs et back-off](#gestion-des-erreurs-et-back-off)
 8. [Notifications](#notifications)
 9. [Dépannage](#dépannage)
-10. [Licence](#licence)
 
 ---
 
@@ -28,6 +30,10 @@ Ce projet automatise la détection de serveurs Discord déployant des fonctionna
 * **Intervalle aléatoire & back-off exponentiel** pour limiter les risques de rate-limits et blocages anti-spam.
 * **Arrêt automatique** dès qu’un serveur valide est détecté (option configurable).
 * **Logs détaillés** et clairs pour suivre le déroulement en temps réel.
+
+## Prérequis
+
+> **⚠️ ATTENTION** : L'utilisation du script peut entraîner des requêtes massives vers l'API Discord et violer ses Conditions d’Utilisation, ce qui risque de bannir ou suspendre votre compte. Utilisez-le avec précaution.
 
 ## Prérequis
 
@@ -95,12 +101,12 @@ Dès que le script est lancé :
 * Vous pouvez enrichir `notifySuccess()` avec :
 
   * Un **son** (`new Audio('ding.mp3').play()`).
-  * Un **webhook**Discord.
+  * Un **webhook** Discord.
 
 ## Dépannage
 
 * **403 Forbidden** : quota de serveurs atteint ou blocage anti-abus.
 
   * Vérifiez votre quota, rallongez l’intervalle, supprimez des serveurs existants.
-* **`findByProps` undefined** : assurez-vous que **ConsoleShortcuts** est chargé.
+* **`findByProps`**\*\* undefined\*\* : assurez-vous que **ConsoleShortcuts** est chargé.
 * **Rate limit** : ne passez jamais sous 120 s sans back-off approprié.
