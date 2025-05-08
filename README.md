@@ -1,7 +1,5 @@
 # discord-experiment-server-scanner
 
-<p style="color:red"><strong>⚠️ ATTENTION :</strong> L’utilisation de ce script peut violer les Conditions d’Utilisation de Discord et entraîner la suspension ou le bannissement de votre compte. Exécutez-le à vos risques et périls.</p>
-
 **Scanner de serveurs expérimentaux Discord**
 
 Ce projet automatise la détection de serveurs Discord déployant des fonctionnalités en test (feature flags). Il crée et supprime des serveurs à partir d’un template, analyse leurs identifiants selon un algorithme de hachage, et signale ceux qui correspondent à vos plages d’expérience.
