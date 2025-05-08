@@ -38,7 +38,7 @@ Ce projet automatise la détection de serveurs Discord déployant des fonctionna
 
 ## Installation
 
-1. Lancez Discord dans votre navigateur.
+1. Lancez Discord sur votre pc.
 2. Vérifiez que Vencord et le plugin **ConsoleShortcuts** sont actifs.
 3. Ouvrez la console Développeur (F12 ou Ctrl+Shift+I).
 4. **Créez manuellement un serveur Discord** via l'interface utilisateur (nécessaire pour initialiser la fonction `createGuildFromTemplate`). Vous pouvez le supprimer ensuite si vous le souhaitez.
